@@ -14,7 +14,7 @@ class OnsenBase extends Control {
       this.unsetAttrOfPart('control', 'disabled');
     }
     else {
-      this.setAttrOfPart('control', 'disabled', ' ', true);
+      this.setAttrOfPart('control', 'disabled');
     }
   }
 
@@ -33,7 +33,7 @@ class OnsenToggle extends OnsenBase {
 
   refreshValue() {
     if (this.value) {
-      this.setAttrOfPart('control', 'checked', ' ');
+      this.setAttrOfPart('control', 'checked');
     }
     else {
       this.unsetAttrOfPart('control', 'checked');

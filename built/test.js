@@ -186,6 +186,46 @@ LOAD(() => {
       label: 'Button Disabled',
     }).optimalSize[1] + padTop;
   });
+  [TextInput].forEach(Item => {
+    let left = padLeft;
+    const width = 200;
+    const height = 32;
+    Item.new({
+      rect: [left, top, width, height],
+      parent: app,
+      label: 'TextInput Enabled',
+      value: 'test text',
+      placeholder: 'enter some text here'
+    });
+    left += width + padLeft;
+    Item.new({
+      rect: [left, top, width, height],
+      parent: app,
+      enabled: false,
+      label: 'TextInput Disabled',
+      value: 'text',
+      placeholder: 'enter some text here'
+    });
+    top += height + padTop;
+    left = padLeft;
+    Item.new({
+      rect: [left, top, width, height],
+      parent: app,
+      label: 'TextInput Enabled',
+      value: '',
+      placeholder: 'enter some text here'
+    });
+    left += width + padLeft;
+    Item.new({
+      rect: [left, top, width, height],
+      parent: app,
+      enabled: false,
+      label: 'TextInput Disabled',
+      value: '',
+      placeholder: 'enter some text here'
+    });
+    top += height + padTop;
+  });
 });
 
 /*NavigationBar, NavigationBarItem, NavigationBarWithOutlineButton,

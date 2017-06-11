@@ -7737,7 +7737,7 @@ class HView extends HValueResponder {
     if (this.isObject(this.markupElemIds) && this.isNumber(this.markupElemIds.value)) {
       const _value = this.isString(this.value) ?
         this.value : JSON.stringify(this.value);
-      ELEM.setHTML(this.markupElemIds.value, _value);
+      this.setMarkupOfPart('value', _value);
     }
     return this;
   }
