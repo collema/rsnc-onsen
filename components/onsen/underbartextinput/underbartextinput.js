@@ -1,8 +1,11 @@
-const {OnsenBase} = require('onsen/base');
+const OnsenTextInput = require('onsen/textinput');
 
-class OnsenUnderBarTextInput extends OnsenBase {
+class OnsenUnderBarTextInput extends OnsenTextInput {
   get componentName() {
     return 'underbartextinput';
+  }
+  get componentClassNames() {
+    return 'text-input--underbar';
   }
 }
 

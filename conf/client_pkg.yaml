@@ -8,28 +8,19 @@ packages:
     - default_theme
     - onsen/base
     - onsen/switch
-    - onsen/materialswitch
     - onsen/range
-    - onsen/materialrange
     - onsen/navigationbar
     - onsen/navigationbaritem
     - onsen/navigationbarwithoutlinebutton
     - onsen/bottombar
     - onsen/navigationbarwithsegment
-    - onsen/materialnavigationbar
     - onsen/noshadownavigationbar
-    - onsen/materialnavigationbarwithicons
     - onsen/transparentnavigationbar
     - onsen/button
     - onsen/outlinebutton
     - onsen/lightbutton
     - onsen/quietbutton
     - onsen/calltoactionbutton
-    - onsen/largebutton
-    - onsen/largequietbutton
-    - onsen/largecalltoactionbutton
-    - onsen/materialbutton
-    - onsen/materialflatbutton
     - onsen/buttonbar
     - onsen/segment
     - onsen/icontabbar
@@ -37,16 +28,11 @@ packages:
     - onsen/icononlytabbar
     - onsen/toptabbar
     - onsen/borderedtoptabbar
-    - onsen/materialtabbar
-    - onsen/materialtabbaricononly
-    - onsen/materialtabbariconandlabel
     - onsen/notification
     - onsen/toolbarbutton
     - onsen/checkbox
     - onsen/nobordercheckbox
-    - onsen/materialcheckbox
     - onsen/radiobutton
-    - onsen/materialradiobutton
     # - onsen/list
     # - onsen/noborderlist
     # - onsen/categorylistheader
@@ -63,26 +49,18 @@ packages:
     # - onsen/listitemwithsubtitle
     # - onsen/listitemwiththumbnail
     # - onsen/listitemwithicon
-    # - onsen/materiallist
-    # - onsen/materiallistwithheader
-    # - onsen/materiallistwithcheckboxes
-    # - onsen/materiallistwiththumbnails
-    # - onsen/materiallistwithicons
     # - onsen/listitemwithoutdivider
     # - onsen/listitemwithlongdivider
-    - onsen/searchinput
     - onsen/textinput
+    - onsen/searchinput
     - onsen/underbartextinput
-    - onsen/materialinput
     - onsen/textarea
     - onsen/textareatransparent
     - onsen/dialog
-    - onsen/materialdialog
     - onsen/alertdialog
     - onsen/alertdialogwithouttitle
     - onsen/alertdialogwithmultiplebuttons
     - onsen/alertdialogwithmultiplebuttons2
-    - onsen/materialalertdialog
     - onsen/popover
     - onsen/popoverdown
     - onsen/popoverleft

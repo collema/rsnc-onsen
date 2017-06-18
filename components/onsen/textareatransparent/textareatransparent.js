@@ -1,8 +1,17 @@
-const {OnsenBase} = require('onsen/base');
+const OnsenTextInput = require('onsen/textinput');
 
-class OnsenTextareaTransparent extends OnsenBase {
+class OnsenTextareaTransparent extends OnsenTextInput {
   get componentName() {
     return 'textareatransparent';
+  }
+  get cellTagName() {
+    return 'textarea';
+  }
+  get componentClassNames() {
+    return 'textarea--transparent';
+  }
+  get cellTagAttrs() {
+    return {};
   }
 }
 

@@ -1,8 +1,11 @@
-const {OnsenBase} = require('onsen/base');
+const OnsenTextInput = require('onsen/textinput');
 
-class OnsenSearchInput extends OnsenBase {
+class OnsenSearchInput extends OnsenTextInput {
   get componentName() {
     return 'searchinput';
+  }
+  get componentClassNames() {
+    return 'search-input';
   }
 }
 
