@@ -5,12 +5,9 @@ class OnsenList extends OnsenBase {
   get componentName() {
     return 'list';
   }
-  get cellTagName() {
-    return 'ul';
-  }
   draw() {
     super.draw();
-    this.setCSSClass('list');
+    this.setStyle('overflow-y', 'scroll');
   }
   refreshList() {
     if (this.listItems) {
@@ -18,17 +15,20 @@ class OnsenList extends OnsenBase {
     }
     this.listItems = [];
     let top = 0;
-    this.value.forEach(adminUser => {
-      const selected = adminUser.email === this.options.selectionValue.value.email;
-      this.listItems.push(
-        ChevronListItem.new([0, top, this.rect.width, 40], this, {value: adminUser, selected})
-      );
+    const selectionValue = this.options.selectionValue;
+    this.value.forEach(value => {
+      const listItem =
+        ChevronListItem.new([0, top, this.rect.width, 40], this, {
+          label: value,
+          selectionValue: value,
+          events: {click: true}}
+        );
+      selectionValue.bindResponder(listItem);
+      this.listItems.push(listItem);
       top += 44;
     });
   }
   refreshValue() {
-    console.log('list refreshValue', this.value);
-    console.log('app value', this.app.adminAccountListValue.value);
     if (this.isArray(this.value)) {
       this.refreshList();
     }

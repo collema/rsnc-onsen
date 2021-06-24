@@ -13,6 +13,19 @@ class OnsenListItemWithChevron extends OnsenBase {
   }
   setSelectedStyle(_state) {
     this.toggleCSSClass(this.elemId, 'list__item--chevron', _state);
+    if (_state) {
+      this.setStyle('backgroundColor', 'yellow');
+    }
+    else {
+      this.setStyle('backgroundColor', 'white');
+    }
+  }
+  refreshValue() {
+    super.refreshValue();
+    this.setSelected(this.value === this.options.selectionValue);
+  }
+  click() {
+    this.setValue(this.options.selectionValue);
   }
 }
 
