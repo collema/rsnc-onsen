@@ -71,3 +71,5 @@ packages:
     - onsen/progresscircle
     - onsen/fab
     - onsen/fabmini
+    - onsen/selectoption
+    - onsen/select
